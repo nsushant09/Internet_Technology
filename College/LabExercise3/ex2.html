@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 ex2</title>
+    <style>
+        div{
+            padding: 10px;
+            display: inline-block;
+            border: 2px solid black;
+            margin-left: 40%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h3>HTML Form Test</h3>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="idname">Name</label></td>
+                    <td><input type="text" name="name" id="idname"></td>
+                </tr>
+                <tr>
+                    <td><label for="idadd">Address</label></td>
+                    <td><input type="text" name="add" id="idadd"></td>
+                </tr>
+                <tr>
+                    <td><label for="idemail">Email</label></td>
+                    <td><input type="email" name="email" id="idemail"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="gender" id="idmale">
+                        <label for="idmale">Male</label>
+                        <input type="radio" name="gender" id="idfemale">
+                        <label for="idfemale">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Hobbies</label></td>
+                    <td>
+                        <input type="checkbox" name="hobby" id="idsport">
+                        <label for="idsport">Sports</label>
+                        <input type="checkbox" name="hobby" id="idmovie">
+                        <label for="idmovie">Movies</label>
+                        <input type="checkbox" name="hobby" id="idtravel">
+                        <label for="idtravel">Travelling</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="idcountry">Country</label></td>
+                    <td>
+                        <input list="country" name="browser">
+                        <datalist id="country">
+                            <option value="Nepal" selected></option>
+                            <option value="China"></option>
+                            <option value="Pakistan"></option>
+                            <option value="India"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="idmessage">Message</label></td>
+                    <td><textarea name="message" id="idmessage" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" onclick="alert('You have submitted')">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <script>
+        var length;
+        var breadth;
+        length=parseFloat(prompt("Enter the length : "));
+        breadth=parseFloat(prompt("Enter the breadth : "));
+        function calc(){
+            var area;
+            area=length*breadth;
+            document.getElementById("here").innerHTML=area;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="calc()">Click here to see the area</button>
+    <p id="here"></p>
+</body>
+</html>

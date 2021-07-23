@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToLink</title>
+    <style>
+        body{
+            background-color:rgb(241, 235, 235);
+            font-size: 2vw;
+            text-align: center;
+            color:black;
+        }
+
+        nav .topic a{
+            float: left;
+            padding-left: 424px;
+            padding-right: 424px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-decoration: none;
+            color:black;
+             background-color: rgba(63, 177, 129, 0.582);
+        }
+         nav .topic a:hover,a:active{
+            float: left;
+            padding-left: 424px;
+            padding-right: 424px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(216, 168, 112);
+            color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+        <h1 style="font-size:2.4vw;">Page selections</h1>
+       <nav>
+            <div class="topic"> <a href="ex3_1.html" target="showPage">Page1</a>  </div>
+            <div class="topic"> <a href="ex3_2.html" target="showPage">Page2</a>  </div>
+       </nav>
+        <iframe id="i1" src="ex3_1.html" name="showPage" title="Page1" height="1080" width="100%"></iframe>
+</body>
+</html>

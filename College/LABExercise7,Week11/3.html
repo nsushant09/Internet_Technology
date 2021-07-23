@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3
+    </title>
+    <script>
+        var marks;
+        marks=prompt("Enter the marks");
+        
+        function display(){
+            
+            if(marks>=80 && marks<=100)
+                document.getElementById("themarks").innerHTML="Distinction";
+            else if(marks<80 && marks>=60)
+                document.getElementById("themarks").innerHTML="First Division";
+            else if (marks<60 && marks>=50)
+                document.getElementById("themarks").innerHTML="Second Division";
+            else if(marks<50 && marks>=40)
+                document.getElementById("themarks").innerHTML="Third Division";
+            else
+                document.getElementById("themarks").innerHTML="Fail";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="display()">Click here to Display the Division</button>
+    <p id="themarks"></p>
+</body>
+</html>

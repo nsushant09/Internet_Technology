@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5 Task2</title>
+    <style>
+
+        *{
+            color: #330000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            background-color: #ccaa66;
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+            margin-left: 0px;
+            border:2px solid black;
+        }
+        li{
+            margin: 35px 10px;
+            list-style: none;
+        }
+        .middle{
+            height: 500px;
+            width: 101%;
+        }
+        nav{
+            float: left;
+            background-color: #E8d882;
+            width:20%;
+            height: 100%;
+        }
+        main{
+            background-color: #f1e8b0;
+            width: 79.5%;
+            height: 100%;
+            display: inline-block;
+            margin-left: 2px;
+        }
+        .content{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        #mainImg{
+            float: right;
+            margin: 20px;
+            height: 70%;
+            width: 32%;
+        }
+        .footer{
+            bottom: 16px;
+            display: block;
+            text-align: center;
+            background-color: #ccaa66;
+            width: 100.5%;
+            border: 2px solid black;
+        }
+        @media screen and (max-width:1130px){
+            #mainImg{
+                float: none;
+                margin-left: 30%;
+                height: 40%;
+                width:320px;
+            }
+            .middle{
+                height:900px;
+                text-align: center;
+            }
+        }
+        @media screen and (max-width:690px){
+            #mainImg{
+                float: none;
+                margin-left: 0%;
+                height: 45%;
+                width:350px;
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Stinky Pete's Pirate Tavern</h1>
+    </header>
+    <div class="middle">
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Grog</li>
+                <li>Shanties</li>
+                <li>Become a swab</li>
+            </ul>
+        </nav>
+        <main>
+            <div class="content">
+                <p>Avast maties! Here ye'll be findin' all these delights...</p>
+                <ul>
+                    <li>Great grog</li>
+                    <li>All the rum you can drink</li>
+                    <li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+                    <li>Wenches and swab for every taste</li>
+                    <li>Salty seadogs singin' shanties</li>
+                    <li>...</li>
+                </ul>
+                <address>
+                    Berth 23 <br>
+                    Nottingham Docks <br>
+                    0115 9324567 <br>
+                </address> 
+            </div>
+            <img id="mainImg" src="https://images-na.ssl-images-amazon.com/images/I/51lHfJU+GIL.jpg" alt="The Image"> 
+        </main>
+    </div>
+    <div class="footer">
+        Copyright &copy; 2011 Stinky Pete's Pirate Tavern
+        <p>stinkypete@arrrr.com</p>
+    </div>
+</body>
+</html>
